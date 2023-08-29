@@ -1,0 +1,133 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+nav
+{
+    background-color: #6a4c93;
+    height: 80px;
+    width: 100%;
+}
+nav img
+{
+    height: 60px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+ul
+{
+    float: right;
+    margin-right: 20px;
+}
+li
+{
+    display: inline-block;
+    line-height: 80px;
+}
+ul li a
+{
+    text-transform: uppercase;
+    margin: 0 5px;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 10px;
+}
+a.active,a:hover 
+{
+    background: #1982C4;
+    transition: .5s;
+}
+.checkbtn
+{
+    float: right;
+    line-height: 80px;
+    font-size: 30px;
+    margin-right: 20px;
+    color: white;
+    display: none;
+}
+#check
+{
+    display: none;
+}
+
+@media (max-width:900px) {
+    .checkbtn{
+        display: block;
+    }
+    ul 
+    {
+        position: fixed;
+        background-color: #8AC926;
+        width: 100%;
+        height: calc(100vh - 80px);
+        left: -100%;
+    }
+    li 
+    {
+        display: block;
+        text-align: center;
+        line-height: 35px;
+        margin: 50px 0;
+    }
+    #check:checked ~ul 
+    {
+        left: 0;
+        transition: .5s;
+    }
+    
+    
+}
+.crtable
+{
+    border: 2px solid;
+    padding: 5px;
+    justify-content: center;
+}
+.resumesection
+{
+    height: calc(100vh - 80px);
+    background-color: black;
+}
+.resumesection iframe
+{
+    height: calc(100% - 4px);
+    width: 100%;
+
+}
+.pimg
+{
+    margin: 50px;
+}
+.pimg img
+{
+    width: 65vw;
+}
+.cdiv,.contactdiv
+{
+    margin: 50px;
+}
+.cdiv embed
+{
+    width: 85vw;
+    height: 50vh;
+}
+.contactdiv p
+{
+    line-height: 30px;
+}
+.indexdiv
+{
+    background-color: #FFCA3A;
+    height: calc(100vh - 80px);
+
+}
+.indexdiv p
+{
+    font-size: 5vw;
+    margin-left: 5vw;
+}
