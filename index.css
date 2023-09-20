@@ -131,3 +131,10 @@ a.active,a:hover
     font-size: 5vw;
     margin-left: 5vw;
 }
+
+/* h1 html*/
+
+.html-content
+{
+    margin: 1rem;
+}
